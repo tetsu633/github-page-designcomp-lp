@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* ------------------------------
+    共通設定
+------------------------------ */
+.cf::after {
+    content: "";
+    clear: both;
+}
+
+body {
+    font-family: "Arial", "メイリオ";
+    color: #383E45;
+}
+
+/* ------------------------------
+    モバイル用
+------------------------------ */
+/* ------------------------------
+    モバイル用 - header
+------------------------------ */
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header div.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 15px;
+}
+
+header h1 img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0 15px;
+}
+
+header nav ul li:last-of-type {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    font-weight: normal;
+    font-size: 14px;
+    color: #24292E;
+}
+
+/* ------------------------------
+    モバイル用 - mainimage
+------------------------------ */
+div#mainimage {
+    width: 100%;
+    height: 600px;
+    background: url(../img/mainvisual.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ------------------------------
+    モバイル用 - about
+------------------------------ */
+section#about {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding: 0 20px 0 15px;
+    text-align: center;
+}
+
+section#about h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #383E45;
+}
+
+div.about_content {
+    margin: 60px auto 0 auto;
+    max-width: 360px;
+}
+
+div.about_content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+div.about_content dl {
+    margin-top: 10px;
+}
+
+div.about_content dl dt {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.about_content dl dd {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: left;
+}
+
+/* ------------------------------
+    モバイル用 - bicycle
+------------------------------ */
+section#bicycle {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+section#bicycle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #383E45;
+}
+
+section#bicycle ul {
+    margin-top: 60px;
+}
+
+section#bicycle li:nth-of-type(n+2) {
+    margin-top: 30px;
+}
+
+section#bicycle li img {
+    width: 100%;
+    height: auto;
+}
+
+section#bicycle li dl dt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section#bicycle li dl dd {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* ------------------------------
+    モバイル用 - footer
+------------------------------ */
+footer {
+    width: 100%;
+    height: 30px;
+    margin-top: 140px;
+}
+
+footer p {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* ------------------------------
+    PC用
+------------------------------ */
+@media (min-width: 600px) {
+    /* ------------------------------
+        PC用 - 共通設定
+    ------------------------------ */
+    div.wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    /* ------------------------------
+        PC用 - header
+    ------------------------------ */
+    header {
+        padding:0 70px;
+    }
+
+    header nav ul li:last-of-type {
+        margin-left: 30px;
+    }
+
+    /* ------------------------------
+        PC用 - about
+    ------------------------------ */
+    section#about div.about_content {
+        display: flex;
+        max-width: 530px;
+        justify-content: space-between;
+        margin-top: 66px;
+    }
+
+    div.about_content dl {
+        margin: 0 0 0 30px;
+    }
+
+    /* ------------------------------
+        PC用 - bicycle
+    ------------------------------ */
+    section#bicycle ul {
+        display: flex;
+    }
+
+    section#bicycle ul li:nth-of-type(n+2) {
+        margin: 0 0 0 16px;
+    }
+
+    /* ------------------------------
+        PC用 - footer
+    ------------------------------ */
+    footer {
+        margin-top: 100px;
+    }
+}
